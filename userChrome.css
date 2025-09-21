@@ -1,3 +1,21 @@
 *|sidebar-panel-header {
   display: none !important;
 }
+
+#sidebar-header {
+  display: none;
+}
+
+/* .tabbrowser-tab {
+  visibility: collapse;
+}
+
+.tabbrowser {
+  visibility: collapse;
+}
+#sidebar {
+  visibility: collapse !important;
+}
+#TabsToolbar {
+  visibility: collapse !important;
+} */
