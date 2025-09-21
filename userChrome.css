@@ -2,20 +2,24 @@
   display: none !important;
 }
 
-#sidebar-header {
-  display: none;
+#sidebar-main {
+  visibility: collapse !important;
 }
 
-/* .tabbrowser-tab {
-  visibility: collapse;
+#vertical-tabs {
+  display: none !important;
+  visibility: collapse !important;
+  overflow: hidden !important;
+  width: 0 !important;
 }
 
-.tabbrowser {
-  visibility: collapse;
-}
+#sidebar-box,
 #sidebar {
-  visibility: collapse !important;
+  border-radius: 0 !important;
+  padding-block-end: 0 !important;
 }
-#TabsToolbar {
-  visibility: collapse !important;
-} */
+
+.sidebar-splitter {
+  border-inline: 0 !important;
+  width: 0 !important;
+}
