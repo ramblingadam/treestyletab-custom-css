@@ -1,0 +1,107 @@
+/* Show title of unread tabs with red and italic font */
+/*
+:root.sidebar tab-item.unread .label-content {
+  color: red !important;
+  font-style: italic !important;
+}
+*/
+
+/* Add private browsing indicator per tab */
+/*
+:root.sidebar tab-item.private-browsing tab-label:before {
+  content: "🕶";
+}
+*/
+
+
+
+/* Background */
+:root {
+ --browser-background: hsl(207,56%,15%);
+ --browser-bg-images: unset;
+}
+
+/* New tab button at top */
+:root {
+  --newtab-button-size: 28px;
+  --newtab-button-width: calc(var(--newtab-button-size) + 20px);
+}
+
+.newtab-button-box {
+  /*padding: 10px;*/
+  /*margin: 0 5px;*/
+  padding-right: 2px;
+  padding-bottom: 2px;
+  margin: unset;
+  border: none;
+  border-left: 1px solid var(--theme-colors-tab_line);
+  /* border-bottom: 1px solid var(--tab-border); */
+  /* border: 1px solid var(--theme-colors-toolbar);*/
+ /* border-radius: 100px;*/
+  position: fixed;
+  top: 0px;
+  left: auto;
+  right: 0;
+  height: var(--newtab-button-size);
+  width: var(--newtab-button-width);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  cursor: pointer;
+  z-index: 1000;
+
+}
+
+
+.newtab-button-box:hover {
+  background: var(--theme-colors-button_background_hover)
+}
+
+.newtab-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: unset;
+  border: none;
+}
+
+/*#tabbar {
+  top: calc(var(--newtab-button-size) + 1px) !important;
+  bottom: 0 !important;
+}*/
+
+
+#pinned-tabs-container {
+  /*top: calc(var(--newtab-button-size) + 1px) !important;*/
+  display: flex;
+  padding-right:var(--newtab-button-width) !important;
+ /* height: calc(var(--pinned-tabs-area-size) + 5px);*/
+  max-height: unset;
+ /* border: 10px solid black;*/
+  position: relative;
+  min-height: var(--newtab-button-size)
+
+}
+
+#normal-tabs-container {
+  /*border: 10px solid red;*/
+  margin: unset;
+}
+
+tab-item.pinned {
+  height: calc(var(--newtab-button-size) + 50px);
+}
+
+.overflow-indicator.start {
+  top: calc(var(--newtab-button-size) + 1px + var(--tabbar-top-area-size) + var(--pinned-tabs-area-size));
+}
+.overflow-indicator.end {
+  bottom: calc(var(--subpanel-area-size) + var(--tabbar-bottom-area-size));
+}
+
+/* Custom tab hover styles */
+
+
+
+
